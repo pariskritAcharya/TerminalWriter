@@ -1,4 +1,4 @@
-#Terminal Writer in Manim
+# Terminal Writer in Manim
 
 ### FILES
 
