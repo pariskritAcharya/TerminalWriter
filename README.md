@@ -42,10 +42,10 @@
 ### Note:
   1. This was just the logic behind the system. But in `H1AI.py` this same logic has be modified slightly to make it easier to use. 
   2. ```
-         line1 = self.textConstructor("SYSTEM [Version 10.0.1200.8985] ")
-        line1.move_to(LEFT * 3 + UP * 2)
-        self.Container.add(line1)
-        self.add(line1)
+     line1 = self.textConstructor("SYSTEM [Version 10.0.1200.8985] ")
+     line1.move_to(LEFT * 3 + UP * 2)
+     self.Container.add(line1)
+     self.add(line1)
      ```
      This is just to set first line in some part of screen and with reference to this position all the other texts are displayed.
 
