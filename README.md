@@ -14,15 +14,15 @@
    while above function `textConstructor` just returns the ` Text ` this new function is short and full of parameters that generates terminal effect. I will explain in detail:
    Example: `text1 =self.getText("Hello World!", initial=True,moveGroup=True,moveAmount=0.4)`
    Here, Parameters:
-     a. `text` : string that would be printed in the screen
-     b. `initial` : initial refers to the initial texts like `C:\User\download>` in terminal. If its `False` it wont display it else initial is displayed already but the text is not displayed
-     c. `moveGroup` : every thing displayed in the screen is kept in a `VGroup` and when you need terminal to scroll up you can just turn this parameter on
-     d. `color` : color of the line
-     e. `moveAmount` : the amount by which `VGroup` scrolls if `moveGroup` is active
-     f. `index`: now index is the main thing. As I said everything is added to `Vgroup` and I am placing each text in respect to element in the Vgroup `-1` refers to last element placed in `VGeoup` while `-2` refers to the second last
+      * `text` : string that would be printed in the screen
+      * `initial` : initial refers to the initial texts like `C:\User\download>` in terminal. If its `False` it wont display it else initial is displayed already but the text is not displayed
+      * `moveGroup` : every thing displayed in the screen is kept in a `VGroup` and when you need terminal to scroll up you can just turn this parameter on
+      * `color` : color of the line
+      * `moveAmount` : the amount by which `VGroup` scrolls if `moveGroup` is active
+      * `index`: now index is the main thing. As I said everything is added to `Vgroup` and I am placing each text in respect to element in the Vgroup `-1` refers to last element placed in `VGeoup` while `-2` refers to the second last
                  Note that, `initial` and `text` are seperately placed in `VGroup`. You need to manually set index to ensure which element you are currently refering to position text with respect to
                  if index not set properly text may overwrite or, shift to the right. This could be made automatic but, this just gives flexibility to make multiline Terminal effect. Sometimes you may want to use `-3` or more depending on the use
-3. To make cursor effect, you need to have this set before hand
+      * To make cursor effect, you need to have this set before hand
    ```
          cursor = Rectangle(
             color = GREY_A,
